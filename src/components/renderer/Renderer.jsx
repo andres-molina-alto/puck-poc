@@ -34,7 +34,7 @@ export default function Renderer() {
           userSelect: "none",
           fontSize: "1.5rem",
         }}
-        onClick={() => navigate("/editor")}
+        onClick={() => navigate("editor")}
         aria-label="Back to editor"
         role="button"
       >
