@@ -1,2 +1,168 @@
-"use strict";(self.webpackChunkpuck_poc=self.webpackChunkpuck_poc||[]).push([[706],{706(l,e,i){i.d(e,{LoadedRichTextMenuFull:()=>s});var t=i(998),n=(i(834),i(927),i(38),i(876),i(730),i(585),i(28),i(105),i(578)),c=i(580),o=i(43),r=i(579);(0,n.hY)(),(0,n.hY)();var s=l=>{let{editor:e,field:i,readOnly:s,inline:u}=l;const{tiptap:d={}}=i,{selector:a}=d,g=(0,o.useMemo)(()=>l=>(0,n.IA)((0,n.IA)({},((l,e)=>{var i,t,n,c,o,r,s,u,d,a,g,A,v,k,f,B,h,L,x,C,p,I,y,b,O,R,T,q;const S=l.editor;if(!S)return{};const j=()=>S.can().chain();return{isAlignLeft:S.isActive({textAlign:"left"}),canAlignLeft:!e&&(null==(t=(i=j()).setTextAlign)?void 0:t.call(i,"left").run()),isAlignCenter:S.isActive({textAlign:"center"}),canAlignCenter:!e&&(null==(c=(n=j()).setTextAlign)?void 0:c.call(n,"center").run()),isAlignRight:S.isActive({textAlign:"right"}),canAlignRight:!e&&(null==(r=(o=j()).setTextAlign)?void 0:r.call(o,"right").run()),isAlignJustify:S.isActive({textAlign:"justify"}),canAlignJustify:!e&&(null==(u=(s=j()).setTextAlign)?void 0:u.call(s,"justify").run()),isBold:S.isActive("bold"),canBold:!e&&(null==(a=(d=j()).toggleBold)?void 0:a.call(d).run()),isItalic:S.isActive("italic"),canItalic:!e&&(null==(A=(g=j()).toggleItalic)?void 0:A.call(g).run()),isUnderline:S.isActive("underline"),canUnderline:!e&&(null==(k=(v=j()).toggleUnderline)?void 0:k.call(v).run()),isStrike:S.isActive("strike"),canStrike:!e&&(null==(B=(f=j()).toggleStrike)?void 0:B.call(f).run()),isInlineCode:S.isActive("code"),canInlineCode:!e&&(null==(L=(h=j()).toggleCode)?void 0:L.call(h).run()),isBulletList:S.isActive("bulletList"),canBulletList:!e&&(null==(C=(x=j()).toggleBulletList)?void 0:C.call(x).run()),isOrderedList:S.isActive("orderedList"),canOrderedList:!e&&(null==(I=(p=j()).toggleOrderedList)?void 0:I.call(p).run()),isCodeBlock:S.isActive("codeBlock"),canCodeBlock:!e&&(null==(b=(y=j()).toggleCodeBlock)?void 0:b.call(y).run()),isBlockquote:S.isActive("blockquote"),canBlockquote:!e&&(null==(R=(O=j()).toggleBlockquote)?void 0:R.call(O).run()),canHorizontalRule:!e&&(null==(q=(T=j()).setHorizontalRule)?void 0:q.call(T).run())}})(l,s)),a?a(l,s):{}),[a,s]),A=(0,c.er)({editor:e,selector:g});return e&&A?(0,r.jsx)(t.sc,{editor:e,editorState:A,field:i,readOnly:s,inline:u}):null}}}]);
+"use strict";
+(self.webpackChunkpuck_poc = self.webpackChunkpuck_poc || []).push([
+  [706],
+  {
+    706(l, e, i) {
+      i.d(e, { LoadedRichTextMenuFull: () => s });
+      var t = i(998),
+        n =
+          (i(834),
+          i(927),
+          i(38),
+          i(876),
+          i(730),
+          i(585),
+          i(28),
+          i(105),
+          i(578)),
+        c = i(580),
+        o = i(43),
+        r = i(579);
+      ((0, n.hY)(), (0, n.hY)());
+      var s = (l) => {
+        let { editor: e, field: i, readOnly: s, inline: u } = l;
+        const { tiptap: d = {} } = i,
+          { selector: a } = d,
+          g = (0, o.useMemo)(
+            () => (l) =>
+              (0, n.IA)(
+                (0, n.IA)(
+                  {},
+                  ((l, e) => {
+                    var i,
+                      t,
+                      n,
+                      c,
+                      o,
+                      r,
+                      s,
+                      u,
+                      d,
+                      a,
+                      g,
+                      A,
+                      v,
+                      k,
+                      f,
+                      B,
+                      h,
+                      L,
+                      x,
+                      C,
+                      p,
+                      I,
+                      y,
+                      b,
+                      O,
+                      R,
+                      T,
+                      q;
+                    const S = l.editor;
+                    if (!S) return {};
+                    const j = () => S.can().chain();
+                    return {
+                      isAlignLeft: S.isActive({ textAlign: "left" }),
+                      canAlignLeft:
+                        !e &&
+                        (null == (t = (i = j()).setTextAlign)
+                          ? void 0
+                          : t.call(i, "left").run()),
+                      isAlignCenter: S.isActive({ textAlign: "center" }),
+                      canAlignCenter:
+                        !e &&
+                        (null == (c = (n = j()).setTextAlign)
+                          ? void 0
+                          : c.call(n, "center").run()),
+                      isAlignRight: S.isActive({ textAlign: "right" }),
+                      canAlignRight:
+                        !e &&
+                        (null == (r = (o = j()).setTextAlign)
+                          ? void 0
+                          : r.call(o, "right").run()),
+                      isAlignJustify: S.isActive({ textAlign: "justify" }),
+                      canAlignJustify:
+                        !e &&
+                        (null == (u = (s = j()).setTextAlign)
+                          ? void 0
+                          : u.call(s, "justify").run()),
+                      isBold: S.isActive("bold"),
+                      canBold:
+                        !e &&
+                        (null == (a = (d = j()).toggleBold)
+                          ? void 0
+                          : a.call(d).run()),
+                      isItalic: S.isActive("italic"),
+                      canItalic:
+                        !e &&
+                        (null == (A = (g = j()).toggleItalic)
+                          ? void 0
+                          : A.call(g).run()),
+                      isUnderline: S.isActive("underline"),
+                      canUnderline:
+                        !e &&
+                        (null == (k = (v = j()).toggleUnderline)
+                          ? void 0
+                          : k.call(v).run()),
+                      isStrike: S.isActive("strike"),
+                      canStrike:
+                        !e &&
+                        (null == (B = (f = j()).toggleStrike)
+                          ? void 0
+                          : B.call(f).run()),
+                      isInlineCode: S.isActive("code"),
+                      canInlineCode:
+                        !e &&
+                        (null == (L = (h = j()).toggleCode)
+                          ? void 0
+                          : L.call(h).run()),
+                      isBulletList: S.isActive("bulletList"),
+                      canBulletList:
+                        !e &&
+                        (null == (C = (x = j()).toggleBulletList)
+                          ? void 0
+                          : C.call(x).run()),
+                      isOrderedList: S.isActive("orderedList"),
+                      canOrderedList:
+                        !e &&
+                        (null == (I = (p = j()).toggleOrderedList)
+                          ? void 0
+                          : I.call(p).run()),
+                      isCodeBlock: S.isActive("codeBlock"),
+                      canCodeBlock:
+                        !e &&
+                        (null == (b = (y = j()).toggleCodeBlock)
+                          ? void 0
+                          : b.call(y).run()),
+                      isBlockquote: S.isActive("blockquote"),
+                      canBlockquote:
+                        !e &&
+                        (null == (R = (O = j()).toggleBlockquote)
+                          ? void 0
+                          : R.call(O).run()),
+                      canHorizontalRule:
+                        !e &&
+                        (null == (q = (T = j()).setHorizontalRule)
+                          ? void 0
+                          : q.call(T).run()),
+                    };
+                  })(l, s),
+                ),
+                a ? a(l, s) : {},
+              ),
+            [a, s],
+          ),
+          A = (0, c.er)({ editor: e, selector: g });
+        return e && A
+          ? (0, r.jsx)(t.sc, {
+              editor: e,
+              editorState: A,
+              field: i,
+              readOnly: s,
+              inline: u,
+            })
+          : null;
+      };
+    },
+  },
+]);
 //# sourceMappingURL=706.90cb5dd7.chunk.js.map
