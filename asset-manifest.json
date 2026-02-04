@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/puck-poc/static/css/main.d6be1994.css",
-    "main.js": "/puck-poc/static/js/main.54a31af9.js",
+    "main.js": "/puck-poc/static/js/main.c90d750a.js",
     "static/js/530.b3dfa713.chunk.js": "/puck-poc/static/js/530.b3dfa713.chunk.js",
     "static/js/308.f9198041.chunk.js": "/puck-poc/static/js/308.f9198041.chunk.js",
     "static/js/706.90cb5dd7.chunk.js": "/puck-poc/static/js/706.90cb5dd7.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/644.73aa0879.chunk.js": "/puck-poc/static/js/644.73aa0879.chunk.js",
     "index.html": "/puck-poc/index.html",
     "main.d6be1994.css.map": "/puck-poc/static/css/main.d6be1994.css.map",
-    "main.54a31af9.js.map": "/puck-poc/static/js/main.54a31af9.js.map",
+    "main.c90d750a.js.map": "/puck-poc/static/js/main.c90d750a.js.map",
     "530.b3dfa713.chunk.js.map": "/puck-poc/static/js/530.b3dfa713.chunk.js.map",
     "308.f9198041.chunk.js.map": "/puck-poc/static/js/308.f9198041.chunk.js.map",
     "706.90cb5dd7.chunk.js.map": "/puck-poc/static/js/706.90cb5dd7.chunk.js.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.d6be1994.css",
-    "static/js/main.54a31af9.js"
+    "static/js/main.c90d750a.js"
   ]
 }
