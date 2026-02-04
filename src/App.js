@@ -5,7 +5,7 @@ import Renderer from "./components/renderer/Renderer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/puck-poc">
       <Routes>
         <Route path="/editor" element={<Editor />} />
         <Route path="/renderer" element={<Renderer />} />
