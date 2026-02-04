@@ -1,13 +1,16 @@
 import React, { useEffect } from "react";
 import { Puck } from "@puckeditor/core";
 import { config } from "../../puck/puck.config";
+import { useNavigate } from "react-router-dom";
 
 const initialData = {};
+
+const navigate = useNavigate();
 
 const save = (data) => {
   localStorage.setItem("puck-editor-data", JSON.stringify(data));
 
-  window.location.href = "/renderer";
+  navigate("/renderer");
 };
 
 export default function Editor() {
