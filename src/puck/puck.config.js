@@ -3,10 +3,10 @@ import { WindSpeedBlock } from "../components/weather-blocks/wind-speed/WindSpee
 import { HumidityBlock } from "../components/weather-blocks/humidity/Humidity";
 
 const COLOR_OPTIONS = [
-  { label: "Red", value: "#F8B4B4" },   
-  { label: "Green", value: "#B9FBC0" }, 
-  { label: "Blue", value: "#BDE0FE" },  
-  { label: "Teal", value: "#B8F2E6" },  
+  { label: "Red", value: "#F8B4B4" },
+  { label: "Green", value: "#B9FBC0" },
+  { label: "Blue", value: "#BDE0FE" },
+  { label: "Teal", value: "#B8F2E6" },
 ];
 
 const BASE_FIELDS = {
@@ -55,7 +55,7 @@ export const config = {
 
       defaultProps: {
         ...DEFAULT_LOCATION,
-       color: DEFAULT_COLOR,
+        color: DEFAULT_COLOR,
       },
 
       fields: BASE_FIELDS,

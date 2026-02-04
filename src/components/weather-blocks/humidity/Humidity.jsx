@@ -8,7 +8,7 @@ export function HumidityBlock({ latitude, longitude, color }) {
     if (latitude == null || longitude == null) return;
 
     fetch(
-      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=relative_humidity_2m`
+      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=relative_humidity_2m`,
     )
       .then((res) => res.json())
       .then((data) => {
@@ -22,8 +22,19 @@ export function HumidityBlock({ latitude, longitude, color }) {
   }, [latitude, longitude]);
 
   if (humidity === null) {
-    return <div className="temperature-block loading" style={{ backgroundColor: color }}>Loading humidity...</div>;
+    return (
+      <div
+        className="temperature-block loading"
+        style={{ backgroundColor: color }}
+      >
+        Loading humidity...
+      </div>
+    );
   }
 
-  return <div className="temperature-block" style={{ backgroundColor: color }}>Humidity: {humidity} %</div>;
+  return (
+    <div className="temperature-block" style={{ backgroundColor: color }}>
+      Humidity: {humidity} %
+    </div>
+  );
 }

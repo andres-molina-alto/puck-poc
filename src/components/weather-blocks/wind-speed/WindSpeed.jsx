@@ -8,7 +8,7 @@ export function WindSpeedBlock({ latitude, longitude, color }) {
     if (latitude == null || longitude == null) return;
 
     fetch(
-      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`
+      `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`,
     )
       .then((res) => res.json())
       .then((data) => {
@@ -22,8 +22,19 @@ export function WindSpeedBlock({ latitude, longitude, color }) {
   }, [latitude, longitude]);
 
   if (windSpeed === null) {
-    return <div className="temperature-block loading" style={{ backgroundColor:color }}>Loading wind speed...</div>;
+    return (
+      <div
+        className="temperature-block loading"
+        style={{ backgroundColor: color }}
+      >
+        Loading wind speed...
+      </div>
+    );
   }
 
-  return <div className="temperature-block" style={{ backgroundColor: color }}>Wind Speed: {windSpeed} m/s</div>;
+  return (
+    <div className="temperature-block" style={{ backgroundColor: color }}>
+      Wind Speed: {windSpeed} m/s
+    </div>
+  );
 }

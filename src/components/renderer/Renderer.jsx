@@ -24,7 +24,6 @@ export default function Renderer() {
 
   return (
     <div style={{ height: "100vh", display: "flex", flexDirection: "column" }}>
-      {/* Top bar with back arrow */}
       <div
         style={{
           display: "flex",
@@ -42,9 +41,7 @@ export default function Renderer() {
         ← Back to Editor
       </div>
 
-      {/* Content: two columns */}
       <div style={{ flex: 1, display: "flex", gap: "20px", padding: "1rem" }}>
-        {/* Left: Rendered */}
         <div
           style={{
             flex: 1,
@@ -56,7 +53,6 @@ export default function Renderer() {
           <Render config={config} data={data} />
         </div>
 
-        {/* Right: Raw JSON */}
         <div
           style={{
             flex: 1,
