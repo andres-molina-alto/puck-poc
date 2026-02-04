@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Puck } from "@puckeditor/core"
 import { config } from '../../puck/puck.config';
 
@@ -11,11 +11,15 @@ const save = (data) => {
 };
 
 export default function Editor() {
+useEffect(() => {
+    localStorage.removeItem('puck-editor-data');
+  }, []);
+
+
   return <Puck
       config={config}
       data={initialData}
       onPublish={save}
-      // Add these for better UX
       editMode={true}
       showToolbar={true}
       toolbarConfig={{
