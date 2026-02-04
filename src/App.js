@@ -1,7 +1,7 @@
 // src/App.js
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Editor from './components/editor/Editor';
-import Renderer from './components/Renderer';
+import Renderer from './components/renderer/Renderer';
 
 function App() {
   return (

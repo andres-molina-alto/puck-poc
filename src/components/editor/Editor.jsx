@@ -1,26 +1,14 @@
-import {Puck} from "@puckeditor/core"
 import React from 'react';
-
-
-// Puck configuration
-const config = {
-  components: {
-    HelloWorldBlock: {
-      render: () => {
-        return <h1>"Hello World!"</h1>;
-      },
-    },
-  },
-  root: {
-    render: ({ children }) => {
-      return <div>{children}</div>;
-    },
-  }
-};
+import { Puck } from "@puckeditor/core"
+import { config } from '../../puck/puck.config';
 
 const initialData = {};
 
-const save = (data) => {};
+const save = (data) => {
+  localStorage.setItem('puck-editor-data', JSON.stringify(data));
+  
+  window.location.href = '/renderer';
+};
 
 export default function Editor() {
   return <Puck
